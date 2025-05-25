@@ -1,19 +1,16 @@
-# TechStore - Tienda en Línea
-
-![TechStore Logo](assets/images/logo.svg)
+# SportLoryu's - Tienda Online de Chaquetas
 
 ## Descripción
 
-TechStore es una tienda en línea (e-commerce) moderna y responsiva, especializada en productos tecnológicos. El proyecto implementa un diseño atractivo y funcional con una experiencia de usuario fluida, siguiendo las mejores prácticas actuales de desarrollo web.
+SportLoryu's es una tienda en línea especializada en chaquetas y prendas deportivas urbanas. Este proyecto presenta un diseño moderno y responsivo con una experiencia de usuario fluida.
 
 ## Características Principales
 
 - **Diseño Moderno y Responsivo**: Adaptación completa a dispositivos móviles, tablets y escritorio.
-- **Paleta de Colores Corporativa**: Negro (#000000), Azul Oxford (#14213d), Naranja Web (#fca311), Platino (#e5e5e5) y Blanco (#ffffff).
-- **Tipografía**: Fuente Montserrat en diferentes pesos para mejorar la legibilidad y estética.
-- **Multilingüe**: Soporte completo para español (Colombia) e inglés (USA), fácilmente extensible a más idiomas.
-- **Animaciones**: Efectos suaves para mejorar la experiencia del usuario.
-- **Catálogo de Productos**: Visualización atractiva de productos con slider y páginas de detalle.
+- **Paleta de Colores Corporativa**: Coherente con la marca SportLoryu's.
+- **Tipografía**: Fuente Montserrat.
+- **Multilingüe**: Soporte para español e inglés (Colombia).
+- **Catálogo de Productos**: Visualización de chaquetas con páginas de detalle para productos destacados.
 
 ## Estructura del Proyecto
 
@@ -21,87 +18,61 @@ TechStore es una tienda en línea (e-commerce) moderna y responsiva, especializa
 tienda-en-linea/
 ├── index.html                     # Página principal
 ├── pages/                         # Páginas adicionales
-│   ├── products/                  # Páginas de productos individuales
-│   │   ├── laptop-xps-pro.html
-│   │   ├── smartphone-galaxy-s23.html
-│   │   └── audifonos-premium.html
+│   ├── products/                  # Páginas de productos individuales (chaquetas)
+│   │   ├── chaqueta-impermeable-aquaguard.html
+│   │   ├── chaqueta-deportiva-flexfit.html
+│   │   ├── chaqueta-deportiva-bicolor-velocity.html
+│   │   └── chaqueta-cuero-clasica.html
 ├── assets/                        # Recursos estáticos
 │   ├── css/                       # Hojas de estilo
 │   │   ├── styles.css            # Estilos globales
-│   │   ├── home.css              # Estilos específicos para la página principal
-│   │   └── product.css           # Estilos específicos para páginas de producto
+│   │   ├── home.css              # Estilos página principal
+│   │   └── product-detail.css      # Estilos páginas de producto
 │   ├── js/                        # Archivos JavaScript
-│   │   ├── main.js               # Funcionalidades generales
-│   │   ├── product.js            # Funcionalidades específicas para productos
+│   │   ├── main.js               # Funcionalidades generales y slider testimonios
 │   │   └── translations/         # Archivos de traducción
 │   │       ├── es.json           # Traducciones al español
 │   │       └── en.json           # Traducciones al inglés
-│   └── images/                    # Imágenes e iconos
-│       ├── icons/                # Iconos (banderas, etc.)
-│       └── logo.svg              # Logo de la tienda
+│   └── images/                    # Imágenes e iconos (incluyendo logos y productos de chaqueta)
 ```
 
 ## Tecnologías Utilizadas
 
-- **HTML5**: Estructura semántica moderna.
-- **CSS3**: Estilos avanzados, flexbox, grid, variables CSS y media queries para diseño responsivo.
-- **JavaScript**: Vanilla JS para interactividad, animaciones y funcionalidades.
-- **Font Awesome**: Iconos vectoriales.
-- **Google Fonts**: Fuente Montserrat.
-- **Semantic JSON**: Para gestión de traducciones.
+- **HTML5**
+- **CSS3**
+- **JavaScript** (Vanilla JS)
+- **Font Awesome**
+- **Google Fonts**
+- **Semantic JSON**
 
 ## Funcionalidades Implementadas
 
-1. **Navegación Intuitiva**: Menú principal con enlaces a secciones importantes y navegación móvil.
-2. **Banner Promocional**: Banner animado con información de descuentos y beneficios.
-3. **Selector de Idiomas**: Funcionalidad para cambiar entre español e inglés con banderas nacionales.
-4. **Slider de Productos**: Carrusel interactivo para mostrar productos destacados.
-5. **Páginas de Producto**: Visualización detallada con galería, opciones, especificaciones y reseñas.
-6. **Efectos de Animación**: Aparición suave de elementos al hacer scroll.
-7. **Diseño Responsivo**: Adaptación completa para todos los dispositivos.
-
-## Características Específicas
-
-- **Banner de Descuento**: Animación de desplazamiento horizontal que se detiene al pasar el cursor.
-- **Selector de Idioma**: Menú desplegable con banderas y textos, persistencia de preferencia mediante localStorage.
-- **Efecto de Subrayado**: Animación sutil en los enlaces de navegación.
-- **Galería de Productos**: Miniaturas y visualización ampliada en páginas de producto.
+- Navegación con menú responsivo.
+- Banner promocional.
+- Selector de idiomas.
+- Sección "Sobre Nosotros" con Misión, Visión y Valores de SportLoryu's.
+- Visualización de productos destacados en el index con enlaces a páginas de detalle.
+- Páginas de detalles de producto con información, opciones y pestañas (Descripción, Características, Reseñas).
+- Sección de testimonios (carrusel).
+- Guía de tallas.
+- Formulario de suscripción a newsletter.
+- Pie de página completo con información de contacto y enlaces útiles.
 
 ## Instalación y Uso
 
-1. Clona este repositorio:
-   ```
-   git clone https://github.com/tu-usuario/tienda-en-linea.git
-   ```
-
-2. Navega hasta el directorio del proyecto:
-   ```
-   cd tienda-en-linea
-   ```
-
-3. Abre el archivo `index.html` en tu navegador preferido.
+1. Clona este repositorio.
+2. Navega hasta el directorio del proyecto.
+3. Abre el archivo `index.html` en tu navegador.
 
 ## Personalización
 
-- **Paleta de Colores**: Modifica las variables CSS en `assets/css/styles.css`.
-- **Productos**: Añade nuevas páginas de producto siguiendo la estructura existente.
-- **Idiomas**: Agrega más idiomas creando nuevos archivos JSON en la carpeta `assets/js/translations/`.
-
-## Compatibilidad
-
-El sitio es compatible con los siguientes navegadores:
-- Google Chrome (versión 60+)
-- Mozilla Firefox (versión 60+)
-- Safari (versión 12+)
-- Microsoft Edge (versión 80+)
-- Opera (versión 50+)
-
-## Créditos
-
-- Diseño y desarrollo: [Tu Nombre]
-- Iconos: [Font Awesome](https://fontawesome.com/)
-- Tipografía: [Google Fonts](https://fonts.google.com/)
+- Modifica los archivos HTML para actualizar contenido.
+- Ajusta los estilos en la carpeta `assets/css/`.
+- Edita las traducciones en `assets/js/translations/`.
+- Reemplaza imágenes en `assets/images/`.
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles. 
+Este proyecto está bajo la Licencia MIT. 
+
+## Desarrollado por Giovanni Balza
